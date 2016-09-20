@@ -25,7 +25,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     private static final int TYPE_ITEM = 1;
     private static final int TYPE_FOOTER = 2;
 
-    public class ViewHolderHeader extends RecyclerView.ViewHolder {
+    private class ViewHolderHeader extends RecyclerView.ViewHolder {
 
         private ImageView imgDrawerHeader;
 
@@ -35,7 +35,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         }
     }
 
-    public class ViewHolderItem extends RecyclerView.ViewHolder {
+    private class ViewHolderItem extends RecyclerView.ViewHolder {
 
         private TextView tvTitle;
         private ImageView imgDrawer;
@@ -47,7 +47,7 @@ public class DrawerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         }
     }
 
-    public class ViewHolderFooter extends RecyclerView.ViewHolder {
+    private class ViewHolderFooter extends RecyclerView.ViewHolder {
 
         private TextView tvHelpFeedback;
         private TextView tvShare;

@@ -19,7 +19,7 @@ import java.util.List;
 
 public class CategoriesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    public class ViewHolderItem extends RecyclerView.ViewHolder {
+    private class ViewHolderItem extends RecyclerView.ViewHolder {
 
         private TextView tvTitleCategories;
         private ImageView imgBackgroundCategories;

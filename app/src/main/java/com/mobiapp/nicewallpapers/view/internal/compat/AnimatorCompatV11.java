@@ -11,11 +11,11 @@ import android.os.Build;
  * @see
  */
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class AnimatorCompatV11 extends AnimatorCompat {
+class AnimatorCompatV11 extends AnimatorCompat {
 
     ValueAnimator animator;
 
-    public AnimatorCompatV11(float start, float end, final AnimationFrameUpdateListener listener) {
+    AnimatorCompatV11(float start, float end, final AnimationFrameUpdateListener listener) {
         super();
         animator = ValueAnimator.ofFloat(start, end);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {

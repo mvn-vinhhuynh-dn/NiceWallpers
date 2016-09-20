@@ -143,7 +143,7 @@ public class ImagePagerFragment extends BaseFragment {
         private List<PhotoGoup> mPhotos;
         private List<OEMHome> mOemHomes;
 
-        public ImageAdapter(FragmentManager fm, List<PhotoGoup> photos, List<OEMHome> oemHomes) {
+        ImageAdapter(FragmentManager fm, List<PhotoGoup> photos, List<OEMHome> oemHomes) {
             super(fm);
             mPhotos = photos;
             mOemHomes = oemHomes;

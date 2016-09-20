@@ -131,7 +131,7 @@ public class AlmostRippleDrawable extends StateDrawable implements Animatable {
         return true;
     }
 
-    public void animateToPressed() {
+    private void animateToPressed() {
         unscheduleSelf(mUpdater);
         if (mCurrentScale < ACTIVE_SCALE) {
             mReverse = false;
@@ -144,7 +144,7 @@ public class AlmostRippleDrawable extends StateDrawable implements Animatable {
         }
     }
 
-    public void animateToNormal() {
+    private void animateToNormal() {
         unscheduleSelf(mUpdater);
         if (mCurrentScale > INACTIVE_SCALE) {
             mReverse = true;

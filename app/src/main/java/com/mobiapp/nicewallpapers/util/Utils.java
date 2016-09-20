@@ -111,7 +111,7 @@ public class Utils {
                                 }
                                 File downloadDir = new File(path);
                                 File files[] = downloadDir.listFiles();
-                                if (files.length != 0) {
+                                if (files != null && files.length != 0) {
                                     File fileRandom = files[new Random().nextInt(files.length)];
                                     try {
                                         Bitmap bitmap = MediaStore.Images.Media
@@ -122,6 +122,8 @@ public class Utils {
                                     } catch (IOException e) {
                                         Toast.makeText(context, context.getString(R.string.error_load_wallpaper), Toast.LENGTH_SHORT).show();
                                     }
+                                } else {
+                                    Toast.makeText(context, "Error to get new Image, please try again...!", Toast.LENGTH_SHORT).show();
                                 }
                                 return;
                             }
@@ -172,12 +174,12 @@ public class Utils {
         });
     }
 
-    public static class LoadBitmap extends AsyncTask<String, String, Bitmap> {
+    private static class LoadBitmap extends AsyncTask<String, String, Bitmap> {
 
         public Context mContext;
-        public PhotoGoup mPhoto;
+        PhotoGoup mPhoto;
 
-        public LoadBitmap(Context context, PhotoGoup photo) {
+        LoadBitmap(Context context, PhotoGoup photo) {
             mContext = context;
             mPhoto = photo;
         }

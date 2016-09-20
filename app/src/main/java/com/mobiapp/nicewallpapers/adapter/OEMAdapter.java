@@ -18,7 +18,7 @@ import java.util.List;
 
 public class OEMAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    public class ViewHolderItem extends RecyclerView.ViewHolder {
+    private class ViewHolderItem extends RecyclerView.ViewHolder {
 
         private TextView tvTitleCategories;
         private ImageView imgBackgroundCategories;

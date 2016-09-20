@@ -19,7 +19,7 @@ import com.mobiapp.nicewallpapers.view.internal.drawable.MarkerDrawable;
  */
 @TargetApi(21)
 class SeekBarCompatDontCrash {
-    public static void setOutlineProvider(View marker, final MarkerDrawable markerDrawable) {
+    static void setOutlineProvider(View marker, final MarkerDrawable markerDrawable) {
         marker.setOutlineProvider(new ViewOutlineProvider() {
             @Override
             public void getOutline(View view, Outline outline) {
@@ -28,19 +28,19 @@ class SeekBarCompatDontCrash {
         });
     }
 
-    public static Drawable getRipple(ColorStateList colorStateList) {
+    static Drawable getRipple(ColorStateList colorStateList) {
         return new RippleDrawable(colorStateList, null, null);
     }
 
-    public static void setBackground(View view, Drawable background) {
+    static void setBackground(View view, Drawable background) {
         view.setBackground(background);
     }
 
-    public static void setTextDirection(TextView number, int textDirection) {
+    static void setTextDirection(TextView number, int textDirection) {
         number.setTextDirection(textDirection);
     }
 
-    public static boolean isInScrollingContainer(ViewParent p) {
+    static boolean isInScrollingContainer(ViewParent p) {
         while (p != null && p instanceof ViewGroup) {
             if (((ViewGroup) p).shouldDelayChildPressedState()) {
                 return true;
@@ -50,7 +50,7 @@ class SeekBarCompatDontCrash {
         return false;
     }
 
-    public static boolean isHardwareAccelerated(View view) {
+    static boolean isHardwareAccelerated(View view) {
         return view.isHardwareAccelerated();
     }
 }

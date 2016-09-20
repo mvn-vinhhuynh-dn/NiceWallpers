@@ -75,7 +75,7 @@ public class ConnectionUtil {
      * @param subType
      * @return
      */
-    public static boolean isConnectionFast(int type, int subType) {
+    private static boolean isConnectionFast(int type, int subType) {
         if (type == ConnectivityManager.TYPE_WIFI) {
             return true;
         } else if (type == ConnectivityManager.TYPE_MOBILE) {

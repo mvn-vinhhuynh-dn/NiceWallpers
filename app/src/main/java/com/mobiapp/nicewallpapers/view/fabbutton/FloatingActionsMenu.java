@@ -121,7 +121,7 @@ public class FloatingActionsMenu extends ViewGroup {
     }
 
     private static class RotatingDrawable extends LayerDrawable {
-        public RotatingDrawable(Drawable drawable) {
+        RotatingDrawable(Drawable drawable) {
             super(new Drawable[]{drawable});
         }
 
@@ -133,7 +133,7 @@ public class FloatingActionsMenu extends ViewGroup {
         }
 
         @SuppressWarnings("UnusedDeclaration")
-        public void setRotation(float rotation) {
+        void setRotation(float rotation) {
             mRotation = rotation;
             invalidateSelf();
         }
@@ -438,7 +438,7 @@ public class FloatingActionsMenu extends ViewGroup {
         private ObjectAnimator mCollapseAlpha = new ObjectAnimator();
         private boolean animationsSetToPlay;
 
-        public LayoutParams(ViewGroup.LayoutParams source) {
+        LayoutParams(ViewGroup.LayoutParams source) {
             super(source);
 
             mExpandDir.setInterpolator(sExpandInterpolator);
@@ -612,9 +612,9 @@ public class FloatingActionsMenu extends ViewGroup {
     }
 
     public static class SavedState extends BaseSavedState {
-        public boolean mExpanded;
+        boolean mExpanded;
 
-        public SavedState(Parcelable parcel) {
+        SavedState(Parcelable parcel) {
             super(parcel);
         }
 
