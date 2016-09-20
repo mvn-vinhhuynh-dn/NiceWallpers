@@ -1,0 +1,7 @@
+<resources>
+    <string name="base_url">https://api.flickr.com/services</string>
+    <string name="base_url_oem">http://wall.oemwallpapers.com</string>
+    <string name="base_url_oem_photo">http://wall.oemwallpapers.com/%s</string>
+    <!--https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg-->
+    <string name="image_url" formatted="false">https://farm%d.staticflickr.com/%s/%s_%s.jpg</string>
+</resources>

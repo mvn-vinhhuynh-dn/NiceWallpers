@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?android:progressBarStyleSmallInverse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="0dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:singleLine="true"
+        android:text="@string/auto_change_wallpaper"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15" />
+
+    <LinearLayout
+        android:id="@+id/viewAutoChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_row"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/auto_change"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchCompatDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:text="@string/duration"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15" />
+
+    <com.mobiapp.nicewallpapers.view.DiscreteSeekBar
+        android:id="@+id/seekBarDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp" />
+
+    <TextView
+        android:id="@+id/tvTimeDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:singleLine="true"
+        android:textColor="@color/grey_800"
+        android:textSize="@dimen/text_15"
+        tools:text="@string/hours" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:id="@+id/viewWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_row"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/over_wifi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="@string/over_wifi_description"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/text_15" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkboxWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:id="@+id/viewChooseSources"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_row"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/choose_sources"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="@string/choose_sources_description"
+            android:textColor="@color/grey_800"
+            android:textSize="@dimen/text_15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_line" />
+</LinearLayout>

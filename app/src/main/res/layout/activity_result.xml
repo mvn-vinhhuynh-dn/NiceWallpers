@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imgBlur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:singleLine="true"
+            android:text="@string/blur"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20" />
+
+        <com.mobiapp.nicewallpapers.view.DiscreteSeekBar
+            android:id="@+id/seekBarBlur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            fab:dsb_progressColor="@color/white"
+            fab:dsb_rippleColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:singleLine="true"
+            android:text="@string/dim"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20" />
+
+        <com.mobiapp.nicewallpapers.view.DiscreteSeekBar
+            android:id="@+id/seekBarDim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            fab:dsb_progressColor="@color/white"
+            fab:dsb_rippleColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:singleLine="true"
+            android:text="@string/gray"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20" />
+
+        <com.mobiapp.nicewallpapers.view.DiscreteSeekBar
+            android:id="@+id/seekBarGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            fab:dsb_progressColor="@color/white"
+            fab:dsb_rippleColor="@color/white" />
+    </LinearLayout>
+
+    <com.mobiapp.nicewallpapers.view.fabbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        fab:fab_addButtonColorNormal="@color/white"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/green_700"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <com.mobiapp.nicewallpapers.view.fabbutton.FloatingActionButton
+            android:id="@+id/actionSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_addButtonPlusIconColor="@color/white"
+            fab:fab_colorNormal="@color/green_500"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_icon="@drawable/ic_save_white_48dp"
+            fab:fab_title="@string/save" />
+
+        <com.mobiapp.nicewallpapers.view.fabbutton.FloatingActionButton
+            android:id="@+id/actionSaveAndSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_addButtonPlusIconColor="@color/white"
+            fab:fab_colorNormal="@color/green_500"
+            fab:fab_colorPressed="@color/white"
+            fab:fab_icon="@drawable/ic_wallpaper_white_48dp"
+            fab:fab_title="@string/save_set_wallpaper" />
+
+    </com.mobiapp.nicewallpapers.view.fabbutton.FloatingActionsMenu>
+</RelativeLayout>
+

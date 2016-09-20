@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.callapplication.MainActivity">
+    <item
+        android:id="@+id/action_view"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        android:title=""
+        android:visible="false"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_use_as"
+                android:icon="@drawable/ic_dialpad_grey_600_24dp"
+                android:title="@string/action_use_as"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/action_crop"
+                android:icon="@drawable/ic_crop_grey_600_24dp"
+                android:title="@string/action_crop"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/action_blur"
+                android:icon="@drawable/ic_blur_on_grey_600_24dp"
+                android:title="@string/action_blur"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>
