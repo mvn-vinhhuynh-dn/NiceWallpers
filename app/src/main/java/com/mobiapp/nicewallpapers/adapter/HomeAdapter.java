@@ -20,7 +20,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE_HEADER = 0;
     private static final int TYPE_ITEM = 1;
 
-    public class ViewHolderItem extends RecyclerView.ViewHolder {
+    private class ViewHolderItem extends RecyclerView.ViewHolder {
 
         private ImageView imgBackground;
 
@@ -30,7 +30,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
     }
 
-    public class ViewHolderHeader extends RecyclerView.ViewHolder {
+    private class ViewHolderHeader extends RecyclerView.ViewHolder {
 
         private ImageView imgHeader;
 

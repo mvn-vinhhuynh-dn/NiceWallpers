@@ -21,7 +21,7 @@ public class AdMobBannerHelper {
     private Context mContext;
     private AdView adView;
     private com.facebook.ads.AdView adViewFb;
-    public static final String TAG = AdMobBannerHelper.class.getSimpleName();
+    private static final String TAG = AdMobBannerHelper.class.getSimpleName();
 
     public AdMobBannerHelper(Context context, FrameLayout parent) {
 

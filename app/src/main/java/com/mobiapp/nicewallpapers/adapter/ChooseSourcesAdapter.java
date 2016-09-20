@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ChooseSourcesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    public class ViewHolderItem extends RecyclerView.ViewHolder {
+    private class ViewHolderItem extends RecyclerView.ViewHolder {
 
         private CheckBox ckChooseSources;
         private TextView tvChooseSources;

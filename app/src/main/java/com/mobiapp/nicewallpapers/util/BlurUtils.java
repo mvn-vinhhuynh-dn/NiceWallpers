@@ -13,7 +13,7 @@ import com.commit451.nativestackblur.NativeStackBlur;
 public class BlurUtils {
 
     @SuppressLint({"NewApi"})
-    public static Bitmap fastblur(Bitmap bitmap, int radius) {
+    private static Bitmap fastblur(Bitmap bitmap, int radius) {
         try {
             bitmap = NativeStackBlur.process(bitmap, radius);
         } catch (Exception ignored) {

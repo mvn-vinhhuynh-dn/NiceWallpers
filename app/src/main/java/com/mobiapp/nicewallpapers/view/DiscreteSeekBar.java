@@ -82,7 +82,7 @@ public class DiscreteSeekBar extends View {
          * @param value The value to be transformed
          * @return A formatted string
          */
-        public String transformToString(int value) {
+        String transformToString(int value) {
             return String.valueOf(value);
         }
 
@@ -91,7 +91,7 @@ public class DiscreteSeekBar extends View {
          * {@link #transformToString(int)} will be used, otherwise {@link #transform(int)}
          * will be used
          */
-        public boolean useStringTransform() {
+        boolean useStringTransform() {
             return false;
         }
     }

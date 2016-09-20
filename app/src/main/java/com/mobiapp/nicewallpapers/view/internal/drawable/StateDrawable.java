@@ -23,7 +23,7 @@ public abstract class StateDrawable extends Drawable {
     private int mCurrentColor;
     private int mAlpha = 255;
 
-    public StateDrawable(@NonNull ColorStateList tintStateList) {
+    StateDrawable(@NonNull ColorStateList tintStateList) {
         super();
         setColorStateList(tintStateList);
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);

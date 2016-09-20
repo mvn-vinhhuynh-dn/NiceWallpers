@@ -45,7 +45,7 @@ public abstract class AnimatorCompat {
         private final AnimationFrameUpdateListener mListener;
         private final float mEndValue;
 
-        public AnimatorCompatBase(float end, AnimationFrameUpdateListener listener) {
+        AnimatorCompatBase(float end, AnimationFrameUpdateListener listener) {
             mListener = listener;
             mEndValue = end;
         }

@@ -75,7 +75,7 @@ public class PopupIndicator {
         mPopupView.mMarker.setValue(value);
     }
 
-    public boolean isShowing() {
+    private boolean isShowing() {
         return mShowing;
     }
 

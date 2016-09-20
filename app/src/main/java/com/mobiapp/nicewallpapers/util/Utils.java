@@ -172,12 +172,12 @@ public class Utils {
         });
     }
 
-    public static class LoadBitmap extends AsyncTask<String, String, Bitmap> {
+    private static class LoadBitmap extends AsyncTask<String, String, Bitmap> {
 
         public Context mContext;
-        public PhotoGoup mPhoto;
+        PhotoGoup mPhoto;
 
-        public LoadBitmap(Context context, PhotoGoup photo) {
+        LoadBitmap(Context context, PhotoGoup photo) {
             mContext = context;
             mPhoto = photo;
         }
