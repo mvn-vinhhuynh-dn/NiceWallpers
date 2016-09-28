@@ -127,5 +127,4 @@ dependencies {
     compile 'com.commit451:NativeStackBlur:1.0.2'
     compile 'com.kaopiz:kprogresshud:1.0.5'
     compile 'com.commit451:PhotoView:1.2.5'
-    compile 'com.facebook.android:audience-network-sdk:4.13.0'
 }

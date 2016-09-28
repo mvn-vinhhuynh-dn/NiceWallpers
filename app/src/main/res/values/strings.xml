@@ -48,10 +48,8 @@
     <string name="hours">%d Hour(s)</string>
     <string name="blur_history">Blur History</string>
 
-    <string name="banner_ad_unit_id">ca-app-pub-7495408087739651/6700837329</string>
-    <string name="banner_ad_unit_id_fb">630892297081769_630901037080895</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5654056907058952/6981400826</string>
     <string name="ad_unit_id">ca-app-pub-5654056907058952/6918328828</string>
-    <string name="ad_unit_id_fb">630892297081769_630892527081746</string>
     <string name="can_not_load">Can\'t load wallpaper!</string>
     <string name="no_wallpaper">No wallpaper!</string>
     <string name="over_wifi">Only over WiFi</string>
