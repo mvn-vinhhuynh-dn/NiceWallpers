@@ -61,14 +61,14 @@ public class SimpleImageActivity extends AppCompatActivity implements BaseFragme
         @Override
         public void onReceive(Context context, Intent intent) {
             Toast.makeText(context, getString(R.string.set_wallpaper_successfully), Toast.LENGTH_SHORT).show();
-            mAdMobInterstitialHelper.showAds();
+//            mAdMobInterstitialHelper.showAds();
         }
     };
 
     @AfterViews
     void init() {
         BusProvider.getInstance().register(this);
-        mAdMobInterstitialHelper = new AdMobInterstitialHelper(this);
+//        mAdMobInterstitialHelper = new AdMobInterstitialHelper(this);
         if (null != getSupportActionBar()) {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -198,7 +198,7 @@ public class SimpleImageActivity extends AppCompatActivity implements BaseFragme
 
     @Subscribe
     public void saveWallpapersComplete(SaveWallpapersCompleteEvent event) {
-        mAdMobInterstitialHelper.showAds();
+//        mAdMobInterstitialHelper.showAds();
     }
 
     @Override
